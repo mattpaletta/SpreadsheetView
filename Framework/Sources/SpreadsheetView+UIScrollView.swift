@@ -18,6 +18,7 @@ extension SpreadsheetView {
         }
     }
 
+    #if !os(visionOS)
     public var scrollIndicatorInsets: UIEdgeInsets {
         get {
             return overlayView.scrollIndicatorInsets
@@ -26,6 +27,7 @@ extension SpreadsheetView {
             overlayView.scrollIndicatorInsets = newValue
         }
     }
+    #endif
 
     public var contentSize: CGSize {
         get {

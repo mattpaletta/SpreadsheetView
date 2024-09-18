@@ -5,6 +5,7 @@ add_library(SpreadsheetView SHARED ${SRC_FILES})
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SRC_FILES} ${CMAKE_FILES})
 target_include_directories(SpreadsheetView PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(SpreadsheetView PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
+target_link_libraries(SpreadsheetView PUBLIC "-framework UIKit")
 
 set_target_properties(SpreadsheetView PROPERTIES XCODE_ATTRIBUTE_DEFINES_MODULE "YES")
 set_target_properties(SpreadsheetView PROPERTIES XCODE_ATTRIBUTE_PRODUCT_MODULE_NAME "SpreadsheetView")
