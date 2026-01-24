@@ -5,4 +5,5 @@ swift_library(
     srcs = glob(["Framework/Sources/**/*.swift"]),
     module_name = "SpreadsheetView",
     deps = [],
+    visibility = ["//visibility:public"]
 )
