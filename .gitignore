@@ -1,6 +1,7 @@
 ## Build generated
 build/
 DerivedData/
+bazel-*
 
 ## Various settings
 *.pbxuser
